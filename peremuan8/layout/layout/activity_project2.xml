@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Project2">
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Masukkan Angka" />
+
+    <EditText
+        android:id="@+id/Angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka"
+        android:layout_below="@+id/Label"
+        />
+
+    <EditText
+        android:id="@+id/Angka2"
+        android:layout_below="@+id/Angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka"
+        />
+
+    <Button
+        android:id="@+id/Tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:onClick="klik_Tambah"
+        android:layout_marginTop="42dp"
+        android:text="+"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:onClick="klik_Kurang"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/Tambah"
+        android:text="-"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Kali"
+        android:onClick="klik_Kali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/Kurang"
+        android:text="X"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:onClick="klik_Bagi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/Kali"
+        android:text="/"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/Bersihkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tambah"
+        android:text="Bersihkan"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Labelhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bersihkan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textSize="30dp"
+        android:text="Hasil" />
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Labelhasil"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="" />
+
+</RelativeLayout>
