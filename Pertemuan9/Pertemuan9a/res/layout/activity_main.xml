@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIM" />
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"
+        android:hint="Nama" />
+    <EditText
+        android:id="@+id/kampus"
+        android:layout_below="@id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kampus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tampil"
+        android:text="OK"
+        android:onClick="HASIL"
+        android:layout_below="@+id/kampus"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:layout_below="@+id/tampil"
+        android:id="@+id/Tampilkan"
+        />
+</RelativeLayout>
